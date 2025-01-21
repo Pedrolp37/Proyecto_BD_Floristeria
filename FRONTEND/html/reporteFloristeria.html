@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Floristeria</title>
+    <!-- Enlace a tu archivo CSS -->
+    <link rel="stylesheet" href="../css/datatable.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>Reporte Floristeria</h1>
+        <button onclick="window.location.href='/html/reporteGeneral.html'">Regresar a Inicio</button>
+    </div>
+    <div class="filter-container">
+        <div>
+            <label for="floristeriaFilter">Filtrar por Floristeria:</label>
+            <select id="floristeriaFilter">
+                <option value="">Escoger Floristeria</option>
+                <!-- Opciones dinámicas con JavaScript -->
+            </select>
+        </div>
+        <div>
+            <label for="searchInput">Buscar por Nombre:</label>
+            <input type="text" id="searchInput" placeholder="Buscar por nombre de flor">
+        </div>
+        <div>
+            <label for="tipoFilter">Filtrar por Tipo de flor:</label>
+            <select id="tipoFilter">
+                <option value="">Tipo de Flor</option>
+                <!-- Opciones dinámicas con JavaScript -->
+            </select>
+        </div>
+        <div>
+            <label for="colorFilter">Filtrar por Color:</label>
+            <select id="colorFilter">
+                <option value="">Escoger Color</option>
+                <!-- Opciones dinámicas con JavaScript -->
+            </select>
+        </div>
+        <div>
+            <label for="dateFilter">Filtrar por Fecha:</label> 
+            <input type="date" id="dateFilter">
+        </div>
+    </div>
+    <div id="floristeriaContainer" class="table-container">
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Promedio</th>
+                    <th>Género y Especie</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Filas dinámicas con JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="../js/reporteFloristeria.js"></script>
+</body>
+</html>

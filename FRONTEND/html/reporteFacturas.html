@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte de Facturas</title>
+    <!-- Enlace a tu archivo CSS -->
+    <link rel="stylesheet" href="../css/reporteFacturas.css">
+</head>
+<body>
+    <div class="header-container">
+        <h1>Reporte de Facturas</h1>
+        <button onclick="window.location.href='reporteGeneral.html'">Regresar a Inicio</button>
+    </div>
+    <div class="filter-container">
+        <div>
+            <label for="floristeriaFilter">Filtrar por Floristeria:</label>
+            <select id="floristeriaFilter">
+                <option value="">Escoger Floristeria</option>
+                <!-- Opciones dinámicas con JavaScript -->
+            </select>
+        </div>
+        <div>
+            <label for="fechaFilter">Filtrar por Fecha de Factura:</label>
+            <select id="fechaFilter">
+                <option value="">Seleccionar Fecha</option>
+                <!-- Opciones dinámicas con JavaScript -->
+            </select>
+        </div>
+    </div>
+    <div id="facturaContainer" class="factura-container">
+        <!-- Información de la factura se mostrará aquí -->
+    </div>
+
+    <script src="../js/reporteFacturas.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reporte Productor</title>
+    <link rel="stylesheet" href="../css/reporteProductor.css">
+</head>
+<body>
+    <div>
+        <h1>Reporte Productor</h1>
+        <button onclick="window.location.href='/html/reporteGeneral.html'">Regresar a Inicio</button>
+    </div>
+
+    <div class="filter-container">
+        <div>
+            <label for="productorFilter">Filtrar por Productor:</label>
+            <select id="productorFilter">
+                <option value="">Todos</option>
+                <!-- Opciones dinámicas con JavaScript -->
+            </select>
+        </div>
+        <div>
+            <label for="tipoFlorProductor">Filtrar por Tipo de Flor:</label>
+            <select id="tipoFlorProductor">
+                <option value="">Todos</option>
+                <!-- Opciones dinámicas con JavaScript -->
+            </select>
+        </div>
+    </div>
+
+    <div id="productorContainer" class="card-container">
+        <!-- Tarjetas dinámicas con JavaScript -->
+    </div>
+
+    <script src="../js/reporteProductor.js"></script>
+</body>
+</html>

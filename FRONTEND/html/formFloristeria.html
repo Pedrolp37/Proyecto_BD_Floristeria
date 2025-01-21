@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Información de Flor</title>
+    <link rel="stylesheet" href="../css/styleForms.css">
+</head>
+<body>
+    <div>
+      <h1>Agregar Catologo de Floristeria</h1>
+      <button onclick="window.location.href='../index.html'">Regresar a Inicio</button>
+    </div>
+     <!-- Añadir un contenedor para el mensaje -->
+     <div id="messageContainer" class="hidden"></div>
+    <form id="formFloristeriaCatalogo">
+        <div class="container">
+            <div class="form-container">
+                <h2>Formulario de Floristeria</h2>
+                <div class="form-group">
+                    <label for="floristeria">Lista de Floristerias</label>
+                    <select id="floristeriaSelect" name="floristeriaSelect">
+                        <option value="" selected>Seleccione una floristeria</option>
+                        <!-- Las opciones se agregarán dinámicamente con JavaScript -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Nombre propio de flor</label>
+                    <input type="text" id="name_flor" name="name_flor" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción</label>
+                    <input type="text" id="descripcion" name="descripcion">
+                </div>
+                <div class="form-group">
+                    <label for="color">Lista de colores</label>
+                    <select id="colorSelect" name="colorSelect">
+                        <option value="" selected>Seleccione un color</option>
+                        <!-- Las opciones se agregarán dinámicamente con JavaScript -->
+                    </select>
+                </div>
+            </div>
+            <div class="info-container">
+                <h2>Información de la Flor de Corte</h2>
+                <div id="flowerInfo">
+                  <div class="form-group">
+                    <label for="florproductor">Nombre comun de flor de corte</label>
+                    <select id="florSelect" name="florSelect">
+                      <option value="" selected>Seleccione una flor</option>
+                        <!-- Las opciones se agregarán dinámicamente con JavaScript -->
+                    </select>
+
+                    <div class="form-group">
+                      <label for="genero">Genero Especie</label>
+                      <input type="text" id="genero" name="genero" readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="etimologia">Etimologia</label>
+                      <input type="text" id="etimologia" name="etimologia" readonly style="height: 100px; text-align: left;">
+                    </div>
+                    <div class="form-group">
+                      <label for="colores">Colores</label>
+                      <input type="text" id="colores" name="colores" readonly>
+                    </div>
+                    <div class="form-group">
+                      <label for="temperatura">Temperatura</label>
+                      <input type="text" id="temperatura" name="temperatura" readonly>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script src="../js/formFloristeria.js"></script>
+</body>
+</html>

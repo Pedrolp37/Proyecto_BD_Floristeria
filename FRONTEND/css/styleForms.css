@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.form-container,
+.info-container {
+    flex: 1;
+    margin: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.label {
+    margin-bottom: 5px;
+    display: block;
+    color: #666;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.info-container input {
+    border-color: #4CAF50; /* Bordes verdes */
+    background-color: #ffffff; /* Fondo claro para indicar que es solo lectura */
+    cursor: not-allowed; /* Cambiar el cursor para indicar que es no editable */
+}
+
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para los elementos select */
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4CAF50;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+select:focus {
+    outline: none; /* Quitar el borde azul predeterminado en algunos navegadores */
+    border-color: #4CAF50; /* Cambiar el color del borde al enfocarse */
+}
+
+/* Estilos específicos para el contenedor de información de la flor */
+.info-container input[type="text"],
+.info-container input[type="email"],
+.info-container input[type="file"],
+.info-container textarea,
+.info-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fff;
+    margin-bottom: 5px; /* Añadir margen inferior solo a los elementos del contenedor info */
+}
+
+/* Estilo para inputs de solo lectura */
+ .info-container input[readonly] {
+    border-color: #4CAF50; /* Bordes verdes */
+    background-color: #ffffff; /* Fondo claro para indicar que es solo lectura */
+    cursor: not-allowed; /* Cambiar el cursor para indicar que es no editable */
+}
+
+
+#messageContainer { 
+    padding: 10px; 
+    margin-top: 10px; 
+    border-radius: 5px; 
+    display: none; 
+}
+
+#messageContainer.success { 
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724; 
+} 
+
+#messageContainer.error { 
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
